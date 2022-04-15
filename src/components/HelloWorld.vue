@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 0.1.0
+ * @Author: szx
+ * @Date: 2020-12-11 13:54:50
+ * @LastEditors: szx
+ * @LastEditTime: 2022-04-15 10:01:18
+-->
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -40,7 +48,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h3 {
   margin: 40px 0 0;
 }

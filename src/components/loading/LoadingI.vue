@@ -1,0 +1,56 @@
+<!--
+ * @Descripttion: 
+ * @version: 0.1.0
+ * @Author: szx
+ * @Date: 2022-04-15 10:58:13
+ * @LastEditors: szx
+ * @LastEditTime: 2022-04-15 10:58:14
+-->
+<template>
+    <div>
+        <div class="progress-9"></div>
+    </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+* {
+    box-sizing: border-box;
+}
+.progress-9 {
+    --r1: 154%;
+    --r2: 68.5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(
+                var(--r1) var(--r2) at top,
+                #0000 79.5%,
+                #269af2 80%
+            )
+            center left,
+        radial-gradient(var(--r1) var(--r2) at bottom, #269af2 79.5%, #0000 80%)
+            center center,
+        radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #269af2 80%)
+            center right,
+        #ccc;
+    background-size: 50.5% 220%;
+    background-position: -100% 0%, 0% 0%, 100% 0%;
+    background-repeat: no-repeat;
+    animation: p9 2s infinite linear;
+}
+@keyframes p9 {
+    33% {
+        background-position: 0% 33%, 100% 33%, 200% 33%;
+    }
+    66% {
+        background-position: -100% 66%, 0% 66%, 100% 66%;
+    }
+    100% {
+        background-position: 0% 100%, 100% 100%, 200% 100%;
+    }
+}
+</style>
